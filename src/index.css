@@ -82,3 +82,38 @@ button:hover {
 opacity: 0.8;
 }
 
+
+:root {
+  --bg-light: #f8f8f8;
+  --text-light: #222;
+  --bg-dark: #1e1e1e;
+  --text-dark: #eee;
+}
+
+body[data-theme="light"] {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+body[data-theme="dark"] {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+button, select, input {
+  transition: all 0.3s ease;
+}
+
+a {
+  color: inherit;
+}
+
+.user-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
